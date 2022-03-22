@@ -1,0 +1,13 @@
+version: "3.7"
+services:
+
+  dbvever:
+    container_name: dbeaver
+    image: dbeaver/cloudbeaver:latest
+    
+    ports:
+      - "8080:8978"
+    volumes: 
+      - ./dbeaver/workspace:/opt/cloudbeaver/workspace
+      
+
